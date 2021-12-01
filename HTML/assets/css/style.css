@@ -671,6 +671,51 @@ a {
 }
 
 
+/* {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{
+         common styles for all pages
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
+/* ======page title========== */
+
+.page_title h1 {
+    margin: 40px 0 14px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 24px;
+    color: var(--txt-gray);
+}
+
+.page_title .star {
+    position: relative;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+}
+
+.page_title .star::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 62px;
+    right: 37px;
+    top: 12.5px;
+    z-index: 2;
+    background-color: #cccccc;
+}
+
+.page_title .star::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 62px;
+    left: 33px;
+    top: 12.5px;
+    z-index: 2;
+    background-color: #cccccc;
+}
+
+
 /* {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{
                          FAQ - Page
 }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
@@ -730,43 +775,6 @@ a {
 
 .faq_banner {
     margin-top: 64px;
-}
-
-.faqs .title h1 {
-    margin: 40px 0 14px;
-    text-align: center;
-    font-size: 36px;
-    line-height: 24px;
-    color: var(--txt-gray);
-}
-
-.faqs .title .star {
-    position: relative;
-    margin: 0 auto;
-    width: 25px;
-    height: 25px;
-}
-
-.faqs .title .star::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 62px;
-    right: 37px;
-    top: 12.5px;
-    z-index: 2;
-    background-color: #cccccc;
-}
-
-.faqs .title .star::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 62px;
-    left: 33px;
-    top: 12.5px;
-    z-index: 2;
-    background-color: #cccccc;
 }
 
 .faqs .faq_desc p {
@@ -863,4 +871,236 @@ a {
 
 .faq_newsletter {
     background-color: white;
+}
+
+
+/* {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{
+                         Prices Page
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+#navbar_2 .prices_banner {
+    margin-top: 64px;
+}
+
+.prices .price_card,
+.prices .col-11,
+.prices .col-md-11 {
+    max-width: 553px;
+    margin-top: 42px;
+    box-sizing: content-box;
+    border: 1px solid #b0c9ce;
+}
+
+.prices .price_card .price_card_header {
+    height: 59px;
+    color: white;
+    background-color: #1d7a8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices .price_card .price_card_header p {
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.prices .price_card .price_card_ammount {
+    margin-top: 30px;
+    font-size: 48px;
+    line-height: 24px;
+    text-align: center;
+    color: #646464;
+}
+
+.prices .price_card .price_card_ammount span {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.prices .price_card .price_card_desc {
+    display: flex;
+    justify-content: center;
+}
+
+.prices .price_card .price_card_desc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0;
+    width: fit-content;
+}
+
+.prices .price_card .price_card_desc ul li {
+    margin: 22px auto 23px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #646464;
+}
+
+.break_line .col-11 {
+    max-width: 1140px;
+    color: #dcdcdc;
+}
+
+.break_line .col-11 hr {
+    margin: 51px auto 7px;
+}
+
+
+/* ===========extra services=========== */
+
+.services {
+    margin-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 2 auto;
+}
+
+.services .service {
+    display: flex;
+    padding: 0 54.5px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.services .service_img {
+    height: 108px;
+    width: 108px;
+    border: 1px solid #b0c9ce;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .service_desc {
+    margin-top: 17px;
+    max-width: 108px;
+    text-align: center;
+}
+
+.services :nth-child(4) .service_desc .service_name,
+.services :last-child .service_desc .service_name {
+    width: max-content;
+}
+
+.services :nth-child(4) .service_desc .service_name {
+    margin-left: -14px;
+}
+
+.services .service_desc .service_name {
+    font-size: 16px;
+    line-height: 22px;
+    color: #646464;
+}
+
+.services .service_desc .service_time {
+    font-size: 18px;
+    line-height: 26px;
+    color: #1d7a8c;
+    font-weight: bold;
+}
+
+
+/* ==========what we include in cleaning=========== */
+
+.include {
+    background-color: #f6f6f6;
+    margin-top: 41px;
+    padding-top: 40px;
+}
+
+.include .page_title {
+    margin-bottom: 42px;
+}
+
+.include .col-md-3,
+.include .col-11 {
+    width: 360px;
+    margin: 0 15px 82px;
+}
+
+.include .include_card .include_img {
+    max-height: 210px;
+    max-width: 360px;
+}
+
+.include .include_card h5 {
+    margin: 24px 0 16px;
+}
+
+.include .include_card .include_desc ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.include .include_card .include_desc ul li {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.include .include_card .include_desc ul img {
+    margin-right: 9px;
+}
+
+
+/* ==========//what we include in cleaning=========== */
+
+
+/* ================why helperland================= */
+
+#why_helperland {
+    padding-top: 38px;
+}
+
+#why_helperland .why_helperland {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    justify-content: center;
+}
+
+#why_helperland .why_helperland .the_best_img {
+    max-width: 329px;
+    margin: 0 48px;
+    order: 3;
+}
+
+#why_helperland .why_helperland .left_side {
+    text-align: right;
+    width: 338px;
+    max-width: 338px;
+    order: 2;
+}
+
+#why_helperland .why_helperland .right_side {
+    text-align: left;
+    width: 338px;
+    order: 4;
+}
+
+#why_helperland .why_helperland .side_heading {
+    font-size: 20px;
+    line-height: 24px;
+    color: #646464;
+    font-weight: bold;
+}
+
+#why_helperland .why_helperland .side_desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #646464;
+}
+
+#why_helperland .why_helperland .right_side_lower,
+#why_helperland .why_helperland .left_side_lower {
+    margin: 47px 0;
 }

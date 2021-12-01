@@ -31,6 +31,12 @@
     #navbar_2 .navbar .navbar-nav .nav-item {
         margin: 0 10px;
     }
+    .services .service {
+        padding: 0 40px;
+    }
+    #why_helperland .why_helperland .the_best_img {
+        margin: 0 10px;
+    }
 }
 
 @media (max-width:1070px) {
@@ -43,6 +49,27 @@
     }
     #header .navbar .navbar-nav .dropdown .nav-link {
         padding: 12px 0px;
+    }
+    .services .service {
+        padding: 0 30px;
+    }
+    #why_helperland .why_helperland .the_best_img {
+        margin: 0;
+    }
+}
+
+@media (max-width:1029px) {
+    #why_helperland .why_helperland {
+        flex-wrap: wrap-reverse;
+    }
+    #why_helperland .why_helperland .the_best_img {
+        order: 5;
+    }
+    #why_helperland .why_helperland .left_side {
+        margin-right: 8px;
+    }
+    #why_helperland .why_helperland .right_side {
+        margin-left: 8px;
     }
 }
 
@@ -133,6 +160,9 @@
         margin: auto;
         text-align: center;
     }
+    .services .service {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width:768px) {
@@ -169,6 +199,26 @@
     }
 }
 
+@media (max-width:717px) {
+    #why_helperland .why_helperland {
+        flex-wrap: wrap-reverse;
+    }
+    #why_helperland .why_helperland .the_best_img {
+        width: 90vw;
+        order: 5;
+    }
+    #why_helperland .why_helperland .left_side {
+        margin: 0 5vw;
+        order: 4;
+        text-align: center;
+    }
+    #why_helperland .why_helperland .right_side {
+        margin-left: 10;
+        order: 3;
+        text-align: center;
+    }
+}
+
 @media (max-width:576px) {
     .footer .footer_menu ul {
         list-style-type: none;
@@ -192,6 +242,11 @@
     .footer .copyright p {
         line-height: 25px;
     }
+    #why_helperland .why_helperland .left_side {
+        margin: 0;
+        order: 4;
+        text-align: center;
+    }
 }
 
 @media (max-width:386px) {
@@ -210,6 +265,13 @@
         line-height: normal;
         min-height: 70px;
         padding: 0;
+    }
+    .services .service_img {
+        width: 90px;
+        height: 90px;
+    }
+    .services .service {
+        padding: 0 13px;
     }
 }
 
